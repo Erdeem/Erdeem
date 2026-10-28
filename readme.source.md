@@ -62,14 +62,14 @@
 
 ```aura width=410 height=210 inline align=center
 (function() {
-  var langs = (github && github.languages && github.languages.length > 0)
-    ? github.languages.slice(0, 5)
-    : [
-        { name: 'TypeScript', percentage: 48, color: '#3178c6' },
-        { name: 'JavaScript', percentage: 28, color: '#f1e05a' },
-        { name: 'HTML', percentage: 14, color: '#e34c26' },
-        { name: 'CSS', percentage: 10, color: '#563d7c' },
-      ];
+  /* AUTO_LANGS */
+  var langs = [
+    { name: 'Ruby', percentage: 65, color: '#cc342d' },
+    { name: 'Batchfile', percentage: 22, color: '#c1f12e' },
+    { name: 'PowerShell', percentage: 11, color: '#5391fe' },
+    { name: 'JavaScript', percentage: 1, color: '#f1e05a' },
+  ];
+  /* END_AUTO_LANGS */
 
   return (
     <div style={{
